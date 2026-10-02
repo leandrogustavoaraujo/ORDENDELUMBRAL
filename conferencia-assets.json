@@ -1,0 +1,242 @@
+[
+  {
+    "asset": "./assets/app-screenshots/view1.webp",
+    "ok": true,
+    "bytes": 400095
+  },
+  {
+    "asset": "./assets/app-screenshots/view10.webp",
+    "ok": true,
+    "bytes": 131742
+  },
+  {
+    "asset": "./assets/app-screenshots/view11.webp",
+    "ok": true,
+    "bytes": 1016789
+  },
+  {
+    "asset": "./assets/app-screenshots/view12.webp",
+    "ok": true,
+    "bytes": 934506
+  },
+  {
+    "asset": "./assets/app-screenshots/view13.webp",
+    "ok": true,
+    "bytes": 193748
+  },
+  {
+    "asset": "./assets/app-screenshots/view14.webp",
+    "ok": true,
+    "bytes": 340847
+  },
+  {
+    "asset": "./assets/app-screenshots/view2.webp",
+    "ok": true,
+    "bytes": 3415682
+  },
+  {
+    "asset": "./assets/app-screenshots/view3.webp",
+    "ok": true,
+    "bytes": 1248786
+  },
+  {
+    "asset": "./assets/app-screenshots/view4.webp",
+    "ok": true,
+    "bytes": 920177
+  },
+  {
+    "asset": "./assets/app-screenshots/view5.webp",
+    "ok": true,
+    "bytes": 734186
+  },
+  {
+    "asset": "./assets/app-screenshots/view6.webp",
+    "ok": true,
+    "bytes": 1174064
+  },
+  {
+    "asset": "./assets/app-screenshots/view7.webp",
+    "ok": true,
+    "bytes": 693479
+  },
+  {
+    "asset": "./assets/app-screenshots/view8.webp",
+    "ok": true,
+    "bytes": 874103
+  },
+  {
+    "asset": "./assets/app-screenshots/view9.webp",
+    "ok": true,
+    "bytes": 909323
+  },
+  {
+    "asset": "./assets/books/AlquimiaTitus.webp",
+    "ok": true,
+    "bytes": 75246
+  },
+  {
+    "asset": "./assets/books/CORPUSHERM.webp",
+    "ok": true,
+    "bytes": 13326
+  },
+  {
+    "asset": "./assets/books/accion-secreta.webp",
+    "ok": true,
+    "bytes": 44993
+  },
+  {
+    "asset": "./assets/books/atalanta.webp",
+    "ok": true,
+    "bytes": 135231
+  },
+  {
+    "asset": "./assets/books/cabala-mistica.webp",
+    "ok": true,
+    "bytes": 132249
+  },
+  {
+    "asset": "./assets/books/club-bilderberg.webp",
+    "ok": true,
+    "bytes": 69206
+  },
+  {
+    "asset": "./assets/books/codex.webp",
+    "ok": true,
+    "bytes": 166344
+  },
+  {
+    "asset": "./assets/books/codexnasareus.webp",
+    "ok": true,
+    "bytes": 173513
+  },
+  {
+    "asset": "./assets/books/dogma.webp",
+    "ok": true,
+    "bytes": 26342
+  },
+  {
+    "asset": "./assets/books/dzyan.webp",
+    "ok": true,
+    "bytes": 97165
+  },
+  {
+    "asset": "./assets/books/el-kybalion.webp",
+    "ok": true,
+    "bytes": 163920
+  },
+  {
+    "asset": "./assets/books/el-zohar.webp",
+    "ok": true,
+    "bytes": 105688
+  },
+  {
+    "asset": "./assets/books/gran-grimorio.webp",
+    "ok": true,
+    "bytes": 102938
+  },
+  {
+    "asset": "./assets/books/iliuminati.webp",
+    "ok": true,
+    "bytes": 163688
+  },
+  {
+    "asset": "./assets/books/lamegeton.webp",
+    "ok": true,
+    "bytes": 44254
+  },
+  {
+    "asset": "./assets/books/libro-de-enoc.webp",
+    "ok": true,
+    "bytes": 123727
+  },
+  {
+    "asset": "./assets/books/libro-de-la-ley.webp",
+    "ok": true,
+    "bytes": 134577
+  },
+  {
+    "asset": "./assets/books/libro-de-thoth.webp",
+    "ok": true,
+    "bytes": 319996
+  },
+  {
+    "asset": "./assets/books/livernull.webp",
+    "ok": true,
+    "bytes": 68515
+  },
+  {
+    "asset": "./assets/books/magonia.webp",
+    "ok": true,
+    "bytes": 222966
+  },
+  {
+    "asset": "./assets/books/malleus.webp",
+    "ok": true,
+    "bytes": 117212
+  },
+  {
+    "asset": "./assets/books/moral-y-dogma.webp",
+    "ok": true,
+    "bytes": 49759
+  },
+  {
+    "asset": "./assets/books/necro.webp",
+    "ok": true,
+    "bytes": 616640
+  },
+  {
+    "asset": "./assets/books/nueve-puertas.webp",
+    "ok": true,
+    "bytes": 49342
+  },
+  {
+    "asset": "./assets/books/san-cipriano.webp",
+    "ok": true,
+    "bytes": 82980
+  },
+  {
+    "asset": "./assets/books/sefer.webp",
+    "ok": true,
+    "bytes": 144586
+  },
+  {
+    "asset": "./assets/books/sociedades-secretas.webp",
+    "ok": true,
+    "bytes": 48544
+  },
+  {
+    "asset": "./assets/books/splendor-solis-5.webp",
+    "ok": true,
+    "bytes": 119823
+  },
+  {
+    "asset": "./assets/books/suenos-lucidos.webp",
+    "ok": true,
+    "bytes": 19210
+  },
+  {
+    "asset": "./assets/books/tabla-de-esmeralda.webp",
+    "ok": true,
+    "bytes": 83846
+  },
+  {
+    "asset": "./assets/books/thulegesellschaft.webp",
+    "ok": true,
+    "bytes": 70608
+  },
+  {
+    "asset": "./assets/books/tradicion-hermetica.webp",
+    "ok": true,
+    "bytes": 28230
+  },
+  {
+    "asset": "./assets/logo-latam.webp",
+    "ok": true,
+    "bytes": 220154
+  },
+  {
+    "asset": "./assets/quiz-new.webp",
+    "ok": true,
+    "bytes": 152374
+  }
+]

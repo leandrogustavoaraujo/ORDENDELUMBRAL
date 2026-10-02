@@ -1,0 +1,27 @@
+{
+  "palette": {
+    "8b0000": "a68a4f",
+    "b22222": "d5b777",
+    "4a0000": "594624",
+    "dc2626": "c3a467",
+    "ff4d4d": "ead09a",
+    "fb2c36": "cfad70",
+    "e40014": "b58b45"
+  },
+  "changes": [
+    {
+      "file": "css/index-B-boPEmS.css",
+      "original_bytes": 81305,
+      "updated_bytes": 81321,
+      "changed": true
+    },
+    {
+      "file": "js/index-DYPvFoMR.js",
+      "original_bytes": 190813,
+      "updated_bytes": 190879,
+      "changed": true
+    }
+  ],
+  "backup": "work\\biblioteca-before-alchemy",
+  "scope": "Color literals only; original layout, content and quiz logic preserved."
+}
