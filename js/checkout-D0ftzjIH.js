@@ -1,1 +1,19 @@
-import{m as d,p as h}from"./LocalizationContext-CsLd-6hL.js";const l={funnel_view:"funnel_view",funnel_complete:"sales_view",initiate_checkout:"checkout_click"};class f{constructor(){this.utms={},this.sessionId="",this.captureUTMs(),this.initSession()}initSession(){if(typeof window>"u")return;const t=sessionStorage.getItem("ordem137_session_id");t?this.sessionId=t:(this.sessionId=window.crypto&&crypto.randomUUID?crypto.randomUUID():"sess_"+Math.random().toString(36).substring(2,15)+Math.random().toString(36).substring(2,15),sessionStorage.setItem("ordem137_session_id",this.sessionId))}captureUTMs(){if(typeof window>"u")return;const t=new URLSearchParams(window.location.search);["utm_source","utm_medium","utm_campaign","utm_term","utm_content","fbclid","gclid"].forEach(n=>{const s=t.get(n);if(s)this.utms[n]=s,sessionStorage.setItem(`ordem137_${n}`,s);else{const o=sessionStorage.getItem(`ordem137_${n}`);o&&(this.utms[n]=o)}})}async track(t,e={}){var o;const n={...e,...this.utms,timestamp:new Date().toISOString(),url:window.location.href};if(typeof window.gtag=="function")try{window.gtag("event",t,n)}catch(a){console.error("GA4 Error:",a)}const s=l[t];s&&d(s,{label:e.label||((o=e.step)==null?void 0:o.toString()),plan:e.plan,value:e.value,currency:e.currency},s==="checkout_click")}}const w=new f;function p(i,t){var m;const e=(m=t.amounts)==null?void 0:m[i];d("price_view",{country:t.code,currency:t.currency,value:e}),w.track("initiate_checkout",{plan:i,value:e,currency:t.currency});const n=h({manter:!0}),s={content_name:i==="premium"?"Premium":"Basic",content_type:"product",content_ids:[i]};typeof e=="number"&&isFinite(e)&&(s.value=e,s.currency=t.currency);const o=crypto.randomUUID();navigator.sendBeacon("/tracker",new Blob([JSON.stringify({event_name:"InitiateCheckout",event_id:o,event_time:Math.floor(Date.now()/1e3),event_source_url:location.href,user_data:{},custom_data:s})],{type:"application/json"}));try{window.fbq("track","InitiateCheckout",s,{eventID:o})}catch{}const u=["utm_source","utm_medium","utm_campaign","utm_content","utm_term"].map(r=>encodeURIComponent(sessionStorage.getItem(`ordem137_${r}`)||"")),_=u.some(r=>r!==""),c=new URL(i==="premium"?"https://pay.hotmart.com/Y107863640L?off=hycslxm6":"https://pay.hotmart.com/Y107863640L?off=zgb1dcnz");c.searchParams.set("xcod",n),_&&c.searchParams.set("sck",u.join("|")),c.searchParams.set("checkoutMode","10"),setTimeout(()=>{window.location.href=c.toString()},80)}export{w as a,p as s};
+const links={basic:"https://pay.hotmart.com/Y107863640L?off=zgb1dcnz",premium:"https://pay.hotmart.com/Y107863640L?off=hycslxm6"};
+for(const key of ["utm_source","utm_medium","utm_campaign","utm_content","utm_term","fbclid","gclid","src","sck"]){const value=new URLSearchParams(location.search).get(key);if(value)try{sessionStorage.setItem("ordem137_"+key,value)}catch{}}
+const w={track(){}};
+function p(i,t){
+  const e=t.amounts?.[i];
+  const data={content_name:i==="premium"?"Premium":"Basic",content_type:"product",content_ids:[i]};
+  if(typeof e==="number"&&isFinite(e)){data.value=e;data.currency=t.currency;}
+  const url=new URL(links[i]);
+  let trk;
+  try{trk=sessionStorage.getItem("krob_trk");if(!trk){trk=crypto.randomUUID();sessionStorage.setItem("krob_trk",trk);}}catch{trk=crypto.randomUUID();}
+  url.searchParams.set("xcod",trk);
+  const utms=["utm_source","utm_medium","utm_campaign","utm_content","utm_term"].map(key=>{try{return encodeURIComponent(sessionStorage.getItem("ordem137_"+key)||"")}catch{return""}});
+  if(utms.some(value=>value!==""))url.searchParams.set("sck",utms.join("|"));
+  url.searchParams.set("checkoutMode","10");
+  const result=window.UmbralTracking.preserveUrl(url.href);
+  window.UmbralTracking.initiateCheckout(data);
+  setTimeout(()=>{window.location.href=result},80);
+}
+export{w as a,p as s};
